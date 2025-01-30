@@ -35,6 +35,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 		)
 )
 public class AccountsApplication {
+	//MyTest comment
 
 	public static void main(String[] args) {
 		SpringApplication.run(AccountsApplication.class, args);
