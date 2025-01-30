@@ -32,23 +32,28 @@
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
+            <!--– Provides endpoints to monitor health, Metrics and Sessiosn    -->
             <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
+            <!--Spring data JPA – Stores data to DB using Java persistence API using spring data and Hibernate-->
             <artifactId>spring-boot-starter-data-jpa</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
+            <!-- (For input validations) : Bean validation with hibernate validator-->
             <artifactId>spring-boot-starter-validation</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
+           <!-- Helps in building RESTful API’s using spring MVC which uses embedded tomcat as default server-->
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
+            <!--Helps in auto restart of the application if any class is changed and saved.Live reload and config for enhanced dev experience -->
             <artifactId>spring-boot-devtools</artifactId>
             <scope>runtime</scope>
             <optional>true</optional>
@@ -60,6 +65,7 @@
         </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>
+            <!--Helps in reducing boiler plate code like getters and setters and provides lot of annotations for logging, null checks, etc.-->
             <artifactId>lombok</artifactId>
             <optional>true</optional>
         </dependency>
@@ -70,6 +76,7 @@
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
+            <!-- This dependency is used for testing Spring Boot applications -->
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
@@ -79,15 +86,18 @@
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
+                <!-- This plugin is used to package Spring Boot applications into executable JAR or WAR files -->
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
+                <!-- This plugin is used to compile Java source files -->
                 <artifactId>maven-compiler-plugin</artifactId>
                 <configuration>
                     <annotationProcessorPaths>
                         <path>
                             <groupId>org.projectlombok</groupId>
+                            <!-- Lombok library for reducing boilerplate code -->
                             <artifactId>lombok</artifactId>
                             <version>${lombok.version}</version>
                         </path>
